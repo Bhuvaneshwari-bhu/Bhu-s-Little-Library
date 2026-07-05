@@ -7,14 +7,10 @@ This project transforms a simple catalog into an interactive bookshelf where eac
 Built using modern frontend tools with a focus on UI/UX, animation, and visual storytelling.
 
 ---
+🌐 Live Demo
 
-## Live Demo
-
-(Add your Vercel link here after deployment)
-
-```
-https://your-project.vercel.app
-```
+Visit the live site here:
+https://bhu-s-little-library.vercel.app
 
 ---
 
