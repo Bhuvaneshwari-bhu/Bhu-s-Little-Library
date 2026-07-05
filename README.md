@@ -1,4 +1,4 @@
-# 📚 BHU Books — Illustrated Children's Book Showcase
+# 📚 Bhuvana’s Little Library — Interactive Storybook UI
 
 A single-page portfolio for showcasing illustrated children's books and coloring books in a storybook-inspired web experience.
 
