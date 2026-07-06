@@ -3,7 +3,7 @@ import { Mail } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="relative overflow-hidden py-20 px-6 bg-[#CFE4FF] text-[#5B4E46]">
+    <section  id="about" className="relative overflow-hidden py-20 px-6 bg-[#CFE4FF] text-[#5B4E46]">
 
   {/* Background Blue Hearts */}
 <div className="absolute inset-0 overflow-hidden pointer-events-none">

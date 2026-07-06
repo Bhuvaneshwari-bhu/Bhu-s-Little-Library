@@ -12,7 +12,7 @@ export default function BookShelf() {
   const [selectedBook, setSelectedBook] = useState(null);
 
   // More books later? Just increase this number.
-  const TOTAL_SLOTS = 6;
+  const TOTAL_SLOTS = books.length;
 
   const rotations = [-5, 3, -2, 4, -4, 2];
   const heights = [270, 255, 285, 265, 280, 260];
