@@ -30,7 +30,7 @@ export const fallbackBooks = [{
         subtitle: "Glossie and the DreamBloom Garden",
         description: "DreamBloom Garden has a way of showing its butterflies exactly what they need to see and Glossie is about to discover something about herself that no amount of color could ever give her. A dreamy, heartwarming story about the quiet magic of being different, perfect for little ones learning to love exactly who they are.",
         coverUrl: book3,
-        amazonUrl: "#"
+        amazonUrl: "https://a.co/d/022OZsVA"
     },
 
     // 🌟 Coming Soon placeholders
