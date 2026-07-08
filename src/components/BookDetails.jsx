@@ -110,30 +110,62 @@ duration-300
                 {book.description}
               </p>
 
-              <a
-                href={book.amazonUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="
-                  inline-flex
-                  mt-8
-                  px-7
-                  py-3
-                  rounded-full
-                  bg-gradient-to-r from-amber-600 to-orange-700
-                  hover:bg-amber-800
-                  text-white
-                  transition
-                  hover:scale-105
-shadow-xl
-hover:shadow-amber-500/40
-hover:-translate-y-1
-active:scale-95
-duration-300
-                "
-              >
-                Buy on Amazon →
-              </a>
+              <div className="mt-10 flex flex-wrap gap-4">
+
+  {book.flipbookUrl && (
+    <a
+      href={book.flipbookUrl}
+      target="_blank"
+      rel="noreferrer"
+      className="
+        inline-flex
+        items-center
+        gap-2
+        px-7
+        py-3
+        rounded-full
+        bg-emerald-600
+        hover:bg-emerald-700
+        text-white
+        shadow-xl
+        hover:-translate-y-1
+        hover:shadow-emerald-500/30
+        transition-all
+        duration-300
+      "
+    >
+       Read Flipbook
+    </a>
+  )}
+
+  {book.amazonUrl && (
+    <a
+      href={book.amazonUrl}
+      target="_blank"
+      rel="noreferrer"
+      className="
+        inline-flex
+        items-center
+        gap-2
+        px-7
+        py-3
+        rounded-full
+        bg-gradient-to-r
+        from-amber-600
+        to-orange-700
+        text-white
+        shadow-xl
+        hover:-translate-y-1
+        hover:shadow-amber-500/40
+        transition-all
+        duration-300
+      "
+    >
+       Buy on Amazon
+    </a>
+  )}
+
+</div>
             </div>
           </div>
         </div>
