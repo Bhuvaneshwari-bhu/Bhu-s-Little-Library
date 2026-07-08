@@ -34,43 +34,46 @@ export default function ShelfBook({
 
       {/* Book */}
       <motion.div
-        style={{
-          rotate: rotation,
-          height,
-        }}
-        className="relative w-40 rounded-sm overflow-hidden shadow-[0_20px_35px_rgba(0,0,0,.35)]"
-      >
-        <motion.img
-  layoutId={`book-${book.id}`}
-  transition={{
-    type: "spring",
-    stiffness: 90,
-    damping: 22,
-    mass: 1.2,
+  style={{
+    rotate: rotation,
+    height,
   }}
-          src={book.coverUrl}
-          alt={book.title}
-          className="w-full h-full object-cover"
-          draggable={false}
-        />
+  className="relative rounded-sm overflow-hidden shadow-[0_20px_35px_rgba(0,0,0,.35)]"
+>
+  <motion.img
+    layoutId={`book-${book.id}`}
+    transition={{
+      type: "spring",
+      stiffness: 90,
+      damping: 22,
+      mass: 1.2,
+    }}
+    src={book.coverUrl}
+    alt={book.title}
+    draggable={false}
+    style={{
+      height: "100%",
+      width: "auto",
+      display: "block",
+    }}
+  />
 
-        {/* Gloss */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(115deg, transparent 35%, rgba(255,255,255,.28) 48%, transparent 62%)",
-          }}
-        />
+  {/* Gloss */}
+  <div
+    className="absolute inset-0"
+    style={{
+      background:
+        "linear-gradient(115deg, transparent 35%, rgba(255,255,255,.28) 48%, transparent 62%)",
+    }}
+  />
 
-        {/* Selected Glow */}
-        {selected && (
-          <motion.div
-            layoutId="selectedGlow"
-            className="absolute inset-0 ring-4 ring-yellow-300 rounded-sm"
-          />
-        )}
-      </motion.div>
+  {selected && (
+    <motion.div
+      layoutId="selectedGlow"
+      className="absolute inset-0 ring-4 ring-yellow-300 rounded-sm"
+    />
+  )}
+</motion.div>
     </motion.div>
   );
 }
